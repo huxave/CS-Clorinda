@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Objects/img/iconito.png" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <title>Circulo Social - Clorinda </title>
+</head>
+
+<body>
+  <form class="formulario">
+
+    <img src="Objects/img/iconito.png" alt="logo" class="imgLogo" />
+
+    <!-- <h1 class="formulario__titulo">¡Gracias por elegirnos!</h1> -->
+    <!-- <h3 class="formulario__subtitulo">Consultas y Trámites</h3> -->
+    <p class="formulario__parrafo">
+      Por favor, dejanos los datos del evento que querés realizar así reservamos tu mesa.</p>
+
+    <label for="cliente" class="formulario__label">¿Cómo te llamás?</label>
+    <input id="cliente" type="text" class="formulario__input" placeholder="...." />
+
+    <label for="celular" class="formulario__label">Ingresá tu N° de celular </label>
+    <input id="celular" type="text" class="formulario__input" maxlength="11" placeholder="..." />
+
+    <label for="motivo" class="formulario__label">¿Qué evento querés hacer?</label>
+    <select id="motivo" title="" name="motivo" class="formulario__input">
+      <option selected>Elegí una opción...</option>
+      <option>Cumpleaños &#127874 &#127873</option>
+      <option>Agasajo &#128525 &#128293</option>
+      <option>Homenaje &#128116 &#127941 &#128117</option>
+      <option>Propuestas de &#129300..&#128141..&#128562</option>
+      <option>Baby-Shower &#128118 &#127868</option>
+      <option>Gender Revelation &#128087 &#128584 &#128086</option>
+      <option>Negocios&#128188 &#128200</option>
+      <option>After Office &#128084 &#128565</option>
+      <option>Previa &#129395</option>
+      <option>Juntada con amig@s &#127867</option>
+      <option>Familiares &#128106</option>
+      <option>Con ella / Con él..&#128143 &#127870</option>
+      <option>Sólo reserva &#127869</option>
+    </select>
+
+    <label for="cantidad" class="formulario__label">¿Cuántos son?</label>
+    <input id="cantidad" type="text" maxlength="2" class="formulario__input" placeholder="..." />
+
+    <!-- agregados especiales -->
+    <label for="fecha" class="formulario__label">¿Fecha?</label>
+    <input type="date" name="fecha" id="fecha" class="formulario__input" maxlength="2">
+
+    <label for="horario" class="formulario__label">¿Hora?</label>
+    <input type="time" name="horario" id="horario" class="formulario__input">
+
+    <!-- espacio para separar -->
+    <div id="respuesta"></div>
+    <!-- envío -->
+    <button type="button" id="submit" class="formulario__submit">¡Quiero brindar! &nbsp<i
+        class="fa-brands fa-whatsapp"></i>
+    </button>
+  </form>
+  <script src="js/form.js"></script>
+</body>
+
+</html>
